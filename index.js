@@ -16,6 +16,7 @@ app.use("/api/products", require("./routes/product"));
 app.use("/api/orders", require("./routes/order"));
 app.use("/api/carts", require("./routes/cart"));
 app.use("/api/checkout", require("./routes/cart"));
+app.get("/",(req,res)=>{res.send("Hello")});
 
     
 app.listen(process.env.PORT||5000,()=>{
